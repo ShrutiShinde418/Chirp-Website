@@ -1,0 +1,200 @@
+:root {
+  --bg-color-1: rgb(251, 248, 243);
+  --bg-color-2: rgb(215, 245, 245);
+  --black: #000000;
+  --white: #ffffff;
+  --border-color: rgb(255, 173, 35);
+  --main-blue: rgb(29, 161, 242);
+  --text-color-1: rgb(89, 89, 89);
+  --text-color-2: rgb(31, 120, 152);
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: InterBold;
+  src: url("../fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: InterBolder;
+  src: url("../fonts/Inter-ExtraBold.ttf");
+}
+@font-face {
+  font-family: InterMedium;
+  src: url("../fonts/Inter-Medium.ttf");
+}
+@font-face {
+  font-family: InterSemiBold;
+  src: url("../fonts/Inter-SemiBold.ttf");
+}
+.navbar-brand {
+  font-family: InterBold;
+  font-style: italic;
+  color: rgb(49, 128, 245);
+}
+.container-fluid:first-child {
+  background-color: var(--bg-color-1);
+}
+nav .nav-link,
+nav .nav-link:hover {
+  color: var(--text-color-1);
+  font-family: Inter;
+}
+.btn-primary,
+.btn-primary:hover {
+  border: none;
+  font-family: InterSemiBold;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--main-blue);
+}
+section h1 {
+  font-family: InterBold;
+  font-size: 3.5rem;
+  color: var(--black);
+}
+section h2,
+.card-text {
+  font-size: 1.125rem;
+  font-family: Inter;
+  color: var(--text-color-1);
+}
+section h3 {
+  font-size: 1rem;
+}
+.blue-color {
+  color: var(--text-color-2);
+  font-family: InterBold;
+}
+section h4 {
+  color: var(--text-color-1);
+  font-size: 1.125rem;
+  font-family: Inter;
+}
+img[alt^="User"] {
+  margin-left: -20px;
+}
+img[alt^="User"]:first-child {
+  margin-left: 0;
+}
+.heading {
+  font-size: 2.35rem;
+  font-family: InterBold;
+  color: var(--black);
+}
+.card-title {
+  font-family: InterBolder;
+  font-size: 1.1rem;
+}
+.emoji {
+  font-size: 2rem;
+}
+.card {
+  border: 1.5px solid rgba(196, 196, 196, 0.8);
+}
+.container-fluid:nth-child(3) {
+  background-color: var(--bg-color-2);
+}
+.container-fluid:nth-child(3) .card {
+  border: none;
+}
+
+.handle-name {
+  font-family: Inter;
+  color: var(--text-color-1);
+  font-size: 0.8rem;
+}
+#footer {
+  background-color: var(--bg-color-2);
+}
+#footer .nav-link,
+#footer .nav-link:hover {
+  color: var(--black);
+  font-family: InterMedium;
+  font-size: 1.15rem;
+  padding: 0;
+}
+.price-card {
+  border: 1.5px solid rgb(255, 173, 35);
+  padding: 1.75rem 2rem;
+  border-radius: 10px;
+  background-color: rgb(251, 248, 243);
+}
+.price-card h4 {
+  font-family: InterBold;
+  font-size: 2rem;
+  color: var(--black);
+}
+.card-subtitle {
+  font-family: Inter;
+  color: var(--text-color-1);
+  font-size: 1.1rem;
+}
+#heading-1 {
+  font-family: InterBold;
+  font-size: 2rem;
+  color: var(--black);
+}
+.price-card .card-heading {
+  font-size: 1.4rem;
+  color: var(--text-color-1);
+  font-family: Inter;
+}
+.profile-name {
+  font-family: InterBold;
+  font-size: 1.05rem;
+  color: var(--black);
+}
+#price {
+  font-family: InterBold;
+  color: var(--black);
+  font-size: 3rem;
+}
+.price-card ul {
+  list-style-type: none;
+}
+.price-card li {
+  background: url("../Assets/Checkmark.svg") no-repeat;
+  font-family: Inter;
+  color: var(--text-color-1);
+  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  section h1 {
+    font-family: InterBold;
+    font-size: 3.75rem;
+    color: var(--black);
+  }
+  section h4{
+    padding-right: 5.8rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 1199px) {
+  #tweets > .row > .col-sm-4 {
+    width: 25rem;
+  }
+}
+@media (min-width: 1400px) {
+  .card-subtitle {
+    font-family: Inter;
+    color: var(--text-color-1);
+    font-size: 1.25rem;
+  }
+  .col-xl-6 .card-text{
+    font-size: 1.35rem;
+  }
+}
+@media (max-width:576px) {
+  section h1{
+    font-size: 2.25rem;
+  }
+  .col-xl-6 .card-text{
+    font-size: 1.15rem;
+  }
+  .card-body{
+    padding: 1rem 1.5rem;
+  }
+}
